@@ -9,7 +9,7 @@ export const useSocket = () => {
 }
 
 export const SocketProvider = (props) => {
-    const socket = useMemo(() => io("https://webrtc-video-call-97tb.onrender.com/"), [])
+    const socket = useMemo(() => io("https://webrtc-video-call-pnia.vercel.app/"), [])
     return (
         <SocketContext.Provider value={socket}>
             {props.children}
